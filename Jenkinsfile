@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('SCM Checkout'){
+        stage('SCM Checkouts'){
             steps {
             git branch: 'main', credentialsId: 'jen-cred', url: 'https://github.com/st-naresh/sub-micro.git'
             sh 'ls'
